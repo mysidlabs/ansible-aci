@@ -18,7 +18,7 @@
       interface_type: switch_port
       pod_id: 1
       leafs: 205
-      interface: '1/24'
+      interface: '1/30'
       state: present
     delegate_to: localhost
     with_together:
