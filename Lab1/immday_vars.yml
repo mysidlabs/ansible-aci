@@ -1,4 +1,4 @@
-student_no: 1 # input student number
+student_no: sno # input student number
 student_username: "sid-student{{ student_no }}" 
 tenant: "sid-student{{ student_no }}"
 vrf: our_new_vrf
