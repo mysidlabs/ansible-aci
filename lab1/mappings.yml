@@ -17,7 +17,7 @@
       interface_mode: trunk
       interface_type: switch_port
       pod_id: 1
-      leafs: 205
+      leafs: 207
       interface: '1/30'
       state: present
     delegate_to: localhost
