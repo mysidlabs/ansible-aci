@@ -1,7 +1,7 @@
 student_no: sno # input student number
 student_username: "sid-student{{ student_no }}" 
 tenant: "sid-student{{ student_no }}"
-vrf: our_new_vrf
+vrf: my-vrf
 ap: my-ap
 bd: my-bd
 gw_address: "10.242.{{ student_no }}.1"
