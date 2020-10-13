@@ -41,4 +41,5 @@
       gateway: "{{ gw_address }}"
       mask: 24
       state: present
+      scope: shared
     delegate_to: localhost
