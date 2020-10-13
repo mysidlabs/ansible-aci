@@ -16,7 +16,7 @@
       deploy_immediacy: lazy
       interface_mode: trunk
       interface_type: switch_port
-      pod_id: 1
+      pod_id: 2
       leafs: 207
       interface: '1/30'
       state: present
