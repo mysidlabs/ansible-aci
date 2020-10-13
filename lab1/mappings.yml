@@ -13,7 +13,7 @@
       ap: "{{ ap }}"
       epg: "{{ item.0 }}"
       encap_id: "{{ item.1 }}"
-      deploy_immediacy: lazy
+      deploy_immediacy: immediate
       interface_mode: trunk
       interface_type: switch_port
       pod_id: 2
