@@ -6,8 +6,8 @@
   - name: Deploy Static Path binding for given EPG
     aci_static_binding_to_epg:
       host: apic1-pod2
-      username: "{{ student_username }}"
-      password: mysidlab
+      username: '{{ lookup("env", "ANSIBLE_NET_USERNAME") }}'
+      password: '{{ lookup("env", "ANSIBLE_NET_PASSWORD") }}'
       validate_certs: no
       tenant: "{{ tenant }}"
       ap: "{{ ap }}"

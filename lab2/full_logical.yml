@@ -6,8 +6,8 @@
   - name: Deploy VRF context
     aci_vrf:
       host: apic1-pod2
-      username: "{{ student_username }}"
-      password: mysidlab
+      username: '{{ lookup("env", "ANSIBLE_NET_USERNAME") }}'
+      password: '{{ lookup("env", "ANSIBLE_NET_PASSWORD") }}'
       validate_certs: no
       vrf: "{{ vrf }}"
       tenant: "{{ tenant }}"
@@ -20,8 +20,8 @@
   - name: Deploy Bridge Domain
     aci_bd:
       host: apic1-pod2
-      username: "{{ student_username }}"
-      password: mysidlab      
+      username: '{{ lookup("env", "ANSIBLE_NET_USERNAME") }}'
+      password: '{{ lookup("env", "ANSIBLE_NET_PASSWORD") }}'    
       validate_certs: no
       tenant: "{{ tenant }}"
       bd: "{{ bd }}"
@@ -33,8 +33,8 @@
   - name: Add Subnet to Bridge Domain
     aci_bd_subnet:
       host: apic1-pod2
-      username: "{{ student_username }}"
-      password: mysidlab
+      username: '{{ lookup("env", "ANSIBLE_NET_USERNAME") }}'
+      password: '{{ lookup("env", "ANSIBLE_NET_PASSWORD") }}'
       validate_certs: no
       tenant: "{{ tenant }}"
       bd: "{{ bd }}"
@@ -47,8 +47,8 @@
   - name: Add a new AP
     aci_ap:
       host: apic1-pod2
-      username: "{{ student_username }}"
-      password: mysidlab
+      username: '{{ lookup("env", "ANSIBLE_NET_USERNAME") }}'
+      password: '{{ lookup("env", "ANSIBLE_NET_PASSWORD") }}'
       validate_certs: no
       tenant: "{{ tenant }}"
       ap: "{{ ap }}"
@@ -59,8 +59,8 @@
   - name: Add a new EPG
     aci_epg:
       host: apic1-pod2
-      username: "{{ student_username }}"
-      password: mysidlab
+      username: '{{ lookup("env", "ANSIBLE_NET_USERNAME") }}'
+      password: '{{ lookup("env", "ANSIBLE_NET_PASSWORD") }}'
       validate_certs: no
       tenant: "{{ tenant }}"
       ap: "{{ ap }}"
