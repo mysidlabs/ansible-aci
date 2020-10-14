@@ -1,4 +1,5 @@
 student_no: 10 # input student number
+tenant: "sid-student{{ student_no }}"
 vrf: my-vrf
 ap: my-ap
 bd: my-bd
