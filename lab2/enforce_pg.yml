@@ -23,7 +23,7 @@
       username: '{{ lookup("env", "ANSIBLE_NET_USERNAME") }}'
       password: '{{ lookup("env", "ANSIBLE_NET_PASSWORD") }}'
       validate_certs: no
-      path: /api/node/mo/uni/tn-sid-student10/ctx-{{ vrf }}/any.json
+      path: /api/node/mo/uni/tn-{{ student_no }}/ctx-{{ vrf }}/any.json
       method: post
       content:
         vzAny:
