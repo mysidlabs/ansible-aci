@@ -92,7 +92,7 @@
       validate_certs: no
       tenant: "{{ tenant }}"
       ap: "{{ ap }}"
-      epg: db-A
+      epg: web-A
       contract: web-to-app
       contract_type: provider
       state: present
