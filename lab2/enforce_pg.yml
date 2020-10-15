@@ -12,7 +12,7 @@
       vrf: "{{ vrf }}"
       tenant: "{{ tenant }}"
       descr: Unenforced lab VRF
-      policy_control_preference: enforced
+      policy_control_preference: unenforced
       policy_control_direction: ingress
       state: present
     delegate_to: localhost
@@ -23,11 +23,11 @@
       username: '{{ lookup("env", "ANSIBLE_NET_USERNAME") }}'
       password: '{{ lookup("env", "ANSIBLE_NET_PASSWORD") }}'
       validate_certs: no
-      path: /api/node/mo/uni/tn-sid-student{{ student_no }}/ctx-{{ vrf }}/any.json
+      path: /api/node/mo/uni/tn-student{{ student_no }}/ctx-{{ vrf }}/any.json
       method: post
       content:
         vzAny:
           attributes: 
-            dn:  uni/tn-sid-student{{ student_no }}/ctx-{{ vrf }}/any
-            prefGrMemb: enabled     
+            dn:  uni/tn-student{{ student_no }}/ctx-{{ vrf }}/any
+            prefGrMemb: disabled     
     delegate_to: localhost
