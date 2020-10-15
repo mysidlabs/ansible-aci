@@ -20,8 +20,8 @@
   - name: Enable preferred Group 
     aci_rest:
       host: apic1-pod2
-      username: "{{ student_username }}"
-      password: mysidlab
+      username: '{{ lookup("env", "ANSIBLE_NET_USERNAME") }}'
+      password: '{{ lookup("env", "ANSIBLE_NET_PASSWORD") }}'
       validate_certs: no
       path: /api/node/mo/uni/tn-sid-student10/ctx-{{ vrf }}/any.json
       method: post
