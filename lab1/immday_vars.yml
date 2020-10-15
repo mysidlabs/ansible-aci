@@ -13,3 +13,6 @@ encaps:
    - "{{ 1100+(student_no*3) -2 }}"
    - "{{ 1100+(student_no*3) -1 }}"
    - "{{ 1100+(student_no*3) }}"
+app_web_only:
+   - web-A
+   - app-A

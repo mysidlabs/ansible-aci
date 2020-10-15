@@ -67,7 +67,7 @@
       epg: "{{ item }}"
       description: Web Intranet EPG
       bd: "{{ bd }}"
-      preferred_group: yes
+      preferred_group: no
       state: present
     delegate_to: localhost
     with_items:
