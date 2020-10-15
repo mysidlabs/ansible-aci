@@ -9,7 +9,7 @@
       username: '{{ lookup("env", "ANSIBLE_NET_USERNAME") }}'
       password: '{{ lookup("env", "ANSIBLE_NET_PASSWORD") }}'
       validate_certs: no
-      path: "/api/node/mo/uni/tn-sid-student10/ap-my-ap/epg-{{ item }}.json"
+      path: "/api/node/mo/uni/tn-sid-student{{ student_no }}/ap-my-ap/epg-{{ item }}.json"
       method: post
       content:
         fvRsConsIf:
