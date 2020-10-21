@@ -1,6 +1,6 @@
 student_no: sno # input student number
 student_username: "student{{ student_no }}" 
-tenant: "student{{ student_no }}"
+tennant: "student{{ student_no }}"
 vrf: my-vrf
 ap: my-ap
 bd: my-bd
