@@ -12,7 +12,7 @@
       vrf: "{{ vrf }}"
       tenant: "{{ tenant }}"
       descr: Unenforced lab VRF
-      policy_control_preference: unenforced
+      policy_control_preference: enforced
       policy_control_direction: ingress
       state: present
     delegate_to: localhost
@@ -29,5 +29,5 @@
         vzAny:
           attributes: 
             dn:  uni/tn-student{{ student_no }}/ctx-{{ vrf }}/any
-            prefGrMemb: disabled     
+            prefGrMemb: enabled     
     delegate_to: localhost
