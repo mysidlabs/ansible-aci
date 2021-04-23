@@ -3,7 +3,7 @@
   hosts: localhost
   vars_files: immday_vars.yml
   tasks:
-  - name: 
+  - name: Deploy vzAny Contract
     aci_rest:
       host: apic1-pod2
       username: "{{ student_username }}"
